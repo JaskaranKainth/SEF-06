@@ -11,7 +11,7 @@ int main(){
 	int lengthFeet, lengthInch;
 	int widthFeet, widthInch;
 	int i;
-	int regular;
+	int regular, large, upgraded, rejected;
 
 
 //converts feet to inches
@@ -25,14 +25,6 @@ int main(){
 	int width = conversionWidth + conversionWidthInches;
 
 int slip (int length, int width);
-
-if(length < 9 && width < 5 && num <= 30){
-	return regular;
-// } else if(length > 8 || < 16 && )
-
-
-	
-
 
 
 	while(1){
@@ -51,33 +43,49 @@ if(length < 9 && width < 5 && num <= 30){
 		cout << "Thats not a valid option... \n";
 		}
 	
-	// if(length = )
 
 	switch(choice){
 		case 1:
 			cout << "Enter how many feet is your boat is: ";
 			cin >> lengthFeet;
 
-			cout << "and now enter the inces of your boat: ";
-
 			cout << "The length of the boat is: " << lengthFeet << conversionLength << "meters" << endl;
 			break;
 
 		case 2:
 			cout << "Enter the width of your boat: " << endl;
-			cin >> lengthWidth;
+			cin >> widthFeet;
 
-			cout << "The width of the boat is: " << lengthWidth << conversionWidth << "meters" << endl;
+
+			cout << "The width of the boat is: " << widthFeet << conversionWidth << "meters" << endl;
 			break;
 		
 		case 3: 
 			cout << "Enter the electrical requirements of your boat: " << endl;
 			cin >> num;
-
-			cout << "The electrical requirements of the boat are: " << num << "amps" << endl;
+			if(num == 0 || num == 30){
+				cout << "The electrical requirements of the boat are regular, with a power of: " << num << " amps" << endl;
+			} else if(num == 0 || num == 30 || num == 50){
+				cout << "The electical requirements of the boat are large, with a power of: " << num << " amps"  << endl;
+			} else if(num == 50){
+				cout << "The electical requirements of the boat are upgraded, with a power of: " << num << " amps"  << endl;
+			} else {
+				cout << "something went wrong...";
+			}
 			break;
 
 		case 4:
+			if(length < 9 && width < 5 && num <= 30){
+				cout << "the boats slip is: " << regular;
+			} else if(length > 8 || length < 16 && width > 5 || width < 7 && num <= 50){
+				cout << "the boats slip is: " << large;
+			} else if(length < 8 && num == 50){
+				cout << "the boats slip is: " << upgraded;
+			} else if(length > 17 && width > 7){
+				cout << "the boats slip is: " << rejected;
+			} else{
+				cout << "Something went wrong";
+			}
         	cout << "The recommended slips for your boat is " << regular;
 			exit(0);
 	}
