@@ -26,10 +26,10 @@ int main(){
 
 
 
-	// if (choice > 0 && choice < 8)
-	// 	cout << choice;
-	// else if (choice == 8)
-	// 	cout << " Sorry, please choose a valid option.";
+	if (choice > 0 && choice < 5)
+		cout << choice;
+	else if (choice == 5)
+		cout << " Sorry, please choose a valid option.";
 
 	// else if (choice == 1){
 	// 	cout << "Enter the length of the boat: ";
