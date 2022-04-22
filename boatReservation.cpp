@@ -23,6 +23,28 @@ int main(){
     cin >> choice;
 
 
+	if (choice > 0 && choice < 8)
+		cout << choice;
+	else if (choice == 8)
+		cout << " Sorry, please choose a valid option.";
+
+	else if (choice == 1){
+		cout << "the length of your boat is " << choice;
+	    }
+	else if (choice == 2){
+        cout << "The width of the boat is " << choice;
+	    }
+    else if (choice == 3){
+        cout << "the Amps of the boat are " << choice;
+	    }
+    else if (choice += 4){
+        cout << "The recommended slips for your boat is " << choice;
+	
+	    }
+    else if (choice == 8)
+		cout << " Sorry, please choose a valid option.";
+
+
 
 
 	}
