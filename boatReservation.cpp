@@ -15,9 +15,11 @@ int main(){
 	int i;
 
 	unsigned long int fact;
+	int slip = (int length, int width);		
+	int conversionLength = length * 30.48;
+	int conversionWidth = width * 30.48;
+	
 
-	int conversion = num * 30.48;
-	int slip;
 
 
 	while(1){
@@ -36,19 +38,21 @@ int main(){
 		cout << "Thats not a valid option... \n";
 		}
 	
+	if(slip = )
+
 	switch(choice){
 		case 1:
 			cout << "Enter the length of your boat: " << endl;
 			cin >> num;
 
-			cout << "The length of the boat is: " << num << conversion << "cm" << endl;
+			cout << "The length of the boat is: " << num << conversionLength << "cm" << endl;
 			break;
 
 		case 2:
 			cout << "Enter the width of your boat: " << endl;
 			cin >> num;
 
-			cout << "The width of the boat is: " << num << conversion << "cm" << endl;
+			cout << "The width of the boat is: " << num << conversionWidth << "cm" << endl;
 			break;
 		
 		case 3: 
